@@ -32,39 +32,39 @@ Install the dependencies (via Yarn, or npm)
 A lof of the code is copied over from https://developers.google.com/youtube/v3/quickstart/nodejs
 
 1. Log into the Google Developers Console:
-https://console.developers.google.com/
+   https://console.developers.google.com/
 
 
 2. Create New Project
-On the right side you should see a button to create a new project.
-I'll name mine "Youtube View Counter"
-Next, click "Create".
+   On the right side you should see a button to create a new project.
+   I'll name mine "Youtube View Counter"
+   Next, click "Create".
 
 
 3. Enable the YouTube Data API v3
-Click the "Enable APIs and Services" button
+   Click the "Enable APIs and Services" button
 
-Search for "YouTube" and then enable the "YouTube Data API v3"
+   Search for "YouTube" and then enable the "YouTube Data API v3"
 
 
 4. Generate Credentials
-Click the "Create Credentails" button and the select the following:
+   Click the "Create Credentails" button and the select the following:
 
-Which API are you using?
+   Which API are you using?
 
-YouTube Data API v3
-Where will you be calling the API from?
+   YouTube Data API v3
+   Where will you be calling the API from?
 
-Other UI (eg: Windows, CLI tool)
-What data will you be accessing?
+   Other UI (eg: Windows, CLI tool)
+   What data will you be accessing?
 
-User data
+   User data
 
 
 5. Set up consent screen
-Select "External" for the User Type
+   Select "External" for the User Type
 
-Fill out your Application Name, then hit "Save" at the very bottom
+### Fill out your Application Name, then hit "Save" at the very bottom
 
 ## In your console.cloud.google.com Complete The Steps
 ![](https://i.imgur.com/auZWeFl.png)
@@ -90,3 +90,26 @@ Fill out your Application Name, then hit "Save" at the very bottom
 ## run node updater.js
 ### You will get your new access token every time you call node updater.js
 ## Fill in the YT Video ID and You are good to go!
+
+## node-corn 
+### To automatically run the bot, you can setup a cron job that calls the script.
+
+YouTube API limits
+By defauly, YouTube gives you 10,000 "units" per day on the API.
+
+You can also calcualte your API costs here.
+
+So for our purposes, the two API calls are:
+
+videos.list.statistics = 3 units
+
+videos.update.snippet = 53 units
+
+For a total of 56 units per invocation.
+
+So, if I have a bucket of 10,000 per day, and it costs 56 units each time, I can run it ~178 times per day.
+
+With 1440 minutes in a day divided by 178, we can safely run the bot about every 8 miutes. We'll round up to 10 to be safe!
+
+
+
