@@ -37,13 +37,11 @@ https://console.developers.google.com/
 2. Create New Project
 On the right side you should see a button to create a new project.
 
-I'll name mine "This video has x views"
-
+I'll name mine "Youtube View Counter"
 Next, click "Create".
 
 3. Enable the YouTube Data API v3
 Click the "Enable APIs and Services" button
-
 Search for "YouTube" and then enable the "YouTube Data API v3"
 
 4. Generate Credentials
