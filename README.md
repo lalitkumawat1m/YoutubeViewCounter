@@ -85,6 +85,10 @@ Fill out your Application Name, then hit "Save" at the very bottom
 ### You will get your new access token every time you call node updater.js
 ## Fill in the YT Video ID and You are good to go!
 
+If successful, your video title will be update after 10 minutes 
+or if you can't wait then you can change time according to your own by reading 👇 node-corn documentation. 
+
+
 ## node-corn is used (here is full documentation https://www.npmjs.com/package/node-cron) 
 ### To automatically run the bot in every 10 minutes, you can setup a cron job that calls the script.
 
