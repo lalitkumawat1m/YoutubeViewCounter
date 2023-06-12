@@ -17,6 +17,19 @@ For now, my script is running as a cron job ervery 10 minutes (in order to stay 
 ## Video About OAuth2 from EngineerMan
 https://www.youtube.com/watch?v=j-bHvqQ378s&ab_channel=EngineerMan
 
+
+##Project Setup
+Clone the repo locally
+git clone https://github.com/stursby/this-video-has-x-views.git && cd this-video-has-x-views
+Install the dependencies (via Yarn, or npm)
+yarn
+# npm install
+Setup YouTube API
+A lof of the code is copied over from https://developers.google.com/youtube/v3/quickstart/nodejs
+
+1. Log into the Google Developers Console:
+https://console.developers.google.com/
+
 ## In your console.cloud.google.com Complete The Steps
 ![](https://i.imgur.com/auZWeFl.png)
 ![](https://i.imgur.com/jJg1hXd.png)
