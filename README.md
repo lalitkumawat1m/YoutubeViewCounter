@@ -21,7 +21,8 @@ https://www.youtube.com/watch?v=j-bHvqQ378s&ab_channel=EngineerMan
 ## Project Setup
 Clone the repo locally
 ```bash
-  git clone 
+  git clone https://github.com/lalitkumawat1m/YoutubeViewCounter.git
+  cd YoutubeViewCounter
 ```
 
 Install the dependencies (via Yarn, or npm)
