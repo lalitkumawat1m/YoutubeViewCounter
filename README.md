@@ -49,23 +49,17 @@ A lof of the code is copied over from https://developers.google.com/youtube/v3/q
 
 
 4. Generate Credentials
-   Click the "Create Credentails" button and the select the following:
-
-   Which API are you using?
-
-   YouTube Data API v3
-   Where will you be calling the API from?
-
-   Other UI (eg: Windows, CLI tool)
-   What data will you be accessing?
-
-   User data
-
-
+   Click the "Create Credentails" button 
+   
+   
 5. Set up consent screen
    Select "External" for the User Type
 
-### Fill out your Application Name, then hit "Save" at the very bottom
+
+
+Fill out your Application Name, then hit "Save" at the very bottom
+
+
 
 ## In your console.cloud.google.com Complete The Steps
 ![](https://i.imgur.com/auZWeFl.png)
@@ -75,7 +69,7 @@ A lof of the code is copied over from https://developers.google.com/youtube/v3/q
 ![](https://i.imgur.com/ZzEjy7K.png)
 ![](https://i.imgur.com/IPKJxmJ.png)
 
-## Fill out the Fields and run with node token.js
+## Fill out the Fields in token.js and updater.js and run command node token.js
 ### Click on the link and authorize the App:
 ![](https://i.imgur.com/rNIuTnD.png)
 
@@ -89,11 +83,12 @@ A lof of the code is copied over from https://developers.google.com/youtube/v3/q
 
 ## After that fill out the updater.js with your Infos
 ## run node updater.js
+
 ### You will get your new access token every time you call node updater.js
 ## Fill in the YT Video ID and You are good to go!
 
-## node-corn 
-### To automatically run the bot, you can setup a cron job that calls the script.
+## node-corn is used (here is full documentation https://www.npmjs.com/package/node-cron) 
+### To automatically run the bot in every 10 minutes, you can setup a cron job that calls the script.
 
 YouTube API limits
 By defauly, YouTube gives you 10,000 "units" per day on the API.
