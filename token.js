@@ -5,7 +5,7 @@ const {google} = require('googleapis');
         // console.cloud.google.com -> Youtube Data API V3
         '', // OAuth Client ID
         '', // OAuth Client Secret
-        'http://localhost' // Custom URI you put when creating new OAuth Client
+        '' // Custom URI you put when creating new OAuth Client
     );
 
     const url = client.generateAuthUrl({

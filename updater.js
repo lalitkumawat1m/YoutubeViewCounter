@@ -1,5 +1,7 @@
 const axios = require('axios');
 const qs = require('qs');
+var cron = require('node-cron');
+
 
 const CLIENT_ID = '' // Your client id from the client you create on OAuth Consent Screen;
 const CLIENT_SECRET = ''; // Your client secret from the client you create on OAuth Consent Screen
@@ -7,8 +9,15 @@ const CLIENT_SECRET = ''; // Your client secret from the client you create on OA
 const API_KEY = ''; // Your Api key that you copy from the Dashboard in cloud.google.com;
 const REFRESH_TOKEN = ''; // Your refresh_token;
 
-(async () => {
+
+  
+
+//corn will run again updater function every 10 minutes
+
+cron.schedule('*/10 * * * *',(async () => {  
+
     // Request for obtaining an access token every 30-60 mins
+    try{
     let res1 = await axios
     .post(
         'https://oauth2.googleapis.com/token',
@@ -27,6 +36,7 @@ const REFRESH_TOKEN = ''; // Your refresh_token;
     const token = res1.data.access_token;
     
     // Get the video informations
+    
     let res2 = await axios
     .get(
         'https://www.googleapis.com/youtube/v3/videos',
@@ -38,13 +48,14 @@ const REFRESH_TOKEN = ''; // Your refresh_token;
             }
         },
     );
+    
 
     let data = res2.data.items[0];
 
     let {categoryId, title, description, tags} = data.snippet;
     let {viewCount} = data.statistics;
 
-    // console.log(data)
+    console.log(data)
 
     await axios
     .put(
@@ -53,7 +64,7 @@ const REFRESH_TOKEN = ''; // Your refresh_token;
             id:'', // Your video ID
             snippet:{
                 categoryId,
-                title: `juAnDeags | This video has ${viewCount} views`,
+                title: `This title is refreshing every 10 minutes | This video has ${viewCount} views`,
                 description,
                 tags,
             }
@@ -64,4 +75,10 @@ const REFRESH_TOKEN = ''; // Your refresh_token;
             }
         }
     );
-})();
+  }catch (error) {
+    console.log(error);
+  }
+ }
+ )
+
+);
