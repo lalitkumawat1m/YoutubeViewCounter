@@ -1,7 +1,16 @@
 # YouTube View Counter
-A Simple JS for Taking the View Number and Setting it in the title
-My Video : https://youtu.be/a-OWB4VLTq8
-Note that I have not made the script to run automatically anywhere online so, sometimes when I remember I will run it to update! :)
+
+A YouTube bot that will update the video title to match the view count.
+
+Watch Title of 
+My Video : https://youtu.be/yza3FfiMupM
+
+## Screenshots
+
+![App Screenshot](https://res.cloudinary.com/dic3o7vzw/image/upload/v1685945672/Annotation_2023-06-05_114342_wmnbbi.png)
+<img width="429" alt="Screenshot 2023-06-12 164653" src="https://github.com/lalitkumawat1m/YoutubeViewCounter/assets/91591901/9a23fd27-97bc-45fa-9b2a-7f09de30d87d">
+
+❤️ Found this project useful? If you found this project useful, then please consider giving it a ⭐ on Github and sharing it with your friends via social media.
 
 
 ## Video About OAuth2 from EngineerMan
