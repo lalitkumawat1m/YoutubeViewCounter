@@ -6,8 +6,6 @@ Watch Title of
 My Video : https://youtu.be/yza3FfiMupM
 
 ## Screenshots
-
-![App Screenshot](https://res.cloudinary.com/dic3o7vzw/image/upload/v1685945672/Annotation_2023-06-05_114342_wmnbbi.png)
 <img width="429" alt="Screenshot 2023-06-12 164653" src="https://github.com/lalitkumawat1m/YoutubeViewCounter/assets/91591901/9a23fd27-97bc-45fa-9b2a-7f09de30d87d">
 
 ❤️ Found this project useful? If you found this project useful, then please consider giving it a ⭐ on Github and sharing it with your friends via social media.
