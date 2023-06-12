@@ -28,7 +28,7 @@ Install the dependencies (via Yarn, or npm)
 ```bash
   npm install 
 ```
-Setup YouTube API
+## Setup YouTube API
 A lof of the code is copied over from https://developers.google.com/youtube/v3/quickstart/nodejs
 
 1. Log into the Google Developers Console:
