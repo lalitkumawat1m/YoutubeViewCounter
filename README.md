@@ -43,6 +43,7 @@ Next, click "Create".
 
 3. Enable the YouTube Data API v3
 Click the "Enable APIs and Services" button
+
 Search for "YouTube" and then enable the "YouTube Data API v3"
 
 
