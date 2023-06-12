@@ -11,8 +11,6 @@ For now, my script is running as a cron job ervery 10 minutes (in order to stay 
 ## Screenshots
 <img width="429" alt="Screenshot 2023-06-12 164653" src="https://github.com/lalitkumawat1m/YoutubeViewCounter/assets/91591901/9a23fd27-97bc-45fa-9b2a-7f09de30d87d">
 
-❤️ Found this project useful? If you found this project useful, then please consider giving it a ⭐ on Github and sharing it with your friends via social media.
-
 
 ## Video About OAuth2 from EngineerMan
 https://www.youtube.com/watch?v=j-bHvqQ378s&ab_channel=EngineerMan
@@ -106,6 +104,9 @@ For a total of 56 units per invocation.
 So, if I have a bucket of 10,000 per day, and it costs 56 units each time, I can run it ~178 times per day.
 
 With 1440 minutes in a day divided by 178, we can safely run the bot about every 8 miutes. We'll round up to 10 to be safe!
+
+❤️ Found this project useful? If you found this project useful, then please consider giving it a ⭐ on Github and sharing it with your friends via social media.
+
 
 
 
