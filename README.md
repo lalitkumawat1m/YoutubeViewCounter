@@ -1,6 +1,11 @@
 # YouTube View Counter
 
 A YouTube bot that will update the video title to match the view count.
+Here’s the original YouTube video: https://www.youtube.com/watch?v=BxV14h0kFs0
+
+And here’s my copy: https://www.youtube.com/watch?v=yza3FfiMupM
+
+For now, my script is running as a cron job ervery 10 minutes (in order to stay under the 10,000 "units" per day limit).
 
 Watch Title of 
 My Video : https://youtu.be/yza3FfiMupM
