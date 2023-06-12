@@ -18,12 +18,16 @@ For now, my script is running as a cron job ervery 10 minutes (in order to stay 
 https://www.youtube.com/watch?v=j-bHvqQ378s&ab_channel=EngineerMan
 
 
-##Project Setup
+## Project Setup
 Clone the repo locally
-git clone https://github.com/stursby/this-video-has-x-views.git && cd this-video-has-x-views
+```bash
+  git clone 
+```
+
 Install the dependencies (via Yarn, or npm)
-yarn
-# npm install
+```bash
+  npm install 
+```
 Setup YouTube API
 A lof of the code is copied over from https://developers.google.com/youtube/v3/quickstart/nodejs
 
