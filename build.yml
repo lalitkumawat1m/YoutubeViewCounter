@@ -1,0 +1,13 @@
+name: Run JavaScript File Infinitely
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-js-file:
+    runs-on: node
+    steps:
+      - uses: actions/checkout@v2
+      - run: node updater.js --infinite
