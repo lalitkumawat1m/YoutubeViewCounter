@@ -1,6 +1,9 @@
-const axios = require('axios');
-const qs = require('qs');
-var cron = require('node-cron');
+// const axios = require('axios');
+import axios from 'axios';
+// const qs = require('qs');
+import qs from 'qs';
+// var cron = require('node-cron');
+import cron from 'node-cron';
 
 
 const CLIENT_ID = '' // Your client id from the client you create on OAuth Consent Screen;
@@ -14,7 +17,7 @@ const REFRESH_TOKEN = ''; // Your refresh_token;
 
 //corn will run again updater function every 10 minutes
 
-cron.schedule('*/10 * * * *',(async () => {  
+const updater=(async () => {  
 
     // Request for obtaining an access token every 30-60 mins
     try{
@@ -64,7 +67,7 @@ cron.schedule('*/10 * * * *',(async () => {
             id:'', // Your video ID
             snippet:{
                 categoryId,
-                title: `This title is refreshing every 10 minutes | This video has ${viewCount} views`,
+                title: `This Title is refreshing every 10 minutes | This video has ${viewCount} views`,
                 description,
                 tags,
             }
@@ -78,7 +81,7 @@ cron.schedule('*/10 * * * *',(async () => {
   }catch (error) {
     console.log(error);
   }
- }
- )
+ });
 
-);
+
+export default updater;

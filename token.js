@@ -1,4 +1,5 @@
-const {google} = require('googleapis');
+// const {google} = require('googleapis');
+import google from 'googleapis';
 // 
 (async()=>{
     const client = new google.auth.OAuth2(
