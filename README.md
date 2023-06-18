@@ -80,7 +80,8 @@ Fill out your Application Name, then hit "Save" at the very bottom
 
 
 ## After that fill out the updater.js with your Infos
-## run node updater.js
+## run node index.js to start server  
+and deploy this server on cloud like render
 
 ### You will get your new access token every time you call node updater.js
 ## Fill in the YT Video ID and You are good to go!
